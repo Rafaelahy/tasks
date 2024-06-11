@@ -1,10 +1,12 @@
 import React, {Component} from "react" //import dos componentes
-import {StylesSheet, View, Text} from "react-native" //import do css, view e text
+import {StylesSheet, View, Text, ImageBackground} from "react-native" //import do css, view e text
 
 import moment from "moment"
 import "moment/locale/pt-br"
 
 import today_Image from "../../assets/imgs/today.jpg"
+
+import Task from "./components/Task"
 
 // cria uma classe padrão que será usada em outras partes do programa
 export default class TaskList extends Component{ // tem todas as características de um componente (herança)
@@ -19,7 +21,10 @@ export default class TaskList extends Component{ // tem todas as característica
                     </view>
                 </ImageBackground>
                 <View style={styles.taskList}>
-                        <text>Lista de tarefas</text>
+                        <task/>
+                        <task/>
+                        <task/>
+                        {/*  */}
                 </View>
             </View>
         )
